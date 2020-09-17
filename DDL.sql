@@ -2,9 +2,9 @@ create schema anotacao;
 
 use anotacao;
 
-create user 'user'@'localhost' identified by 'pass123';
+create user 'user'@'db-projeto-integrador.ck0s1wz3xnuf.us-east-1.rds.amazonaws.com' identified by 'today16092020';
 
-grant select, insert, delete, update on anotacao.* to user@'localhost';
+grant select, insert, delete, update on anotacao.* to user@'db-projeto-integrador.ck0s1wz3xnuf.us-east-1.rds.amazonaws.com';
 
 create table usr_usuario (
   usr_id bigint unsigned not null auto_increment,
